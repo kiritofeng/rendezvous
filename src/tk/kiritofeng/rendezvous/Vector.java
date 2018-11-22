@@ -61,10 +61,13 @@ class CelestialBody {
     Vector r, v, a;
     double m;
 
+    boolean inBurn;
+
     public CelestialBody(double mass, Vector position, Vector velocity, Vector acceleration) {
         m = mass;
         r = position;
         v = velocity;
         a = acceleration;
+        inBurn = false;
     }
 }
